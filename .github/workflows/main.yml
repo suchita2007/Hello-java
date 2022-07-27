@@ -38,8 +38,10 @@ jobs:
         with:
           push: true
           tags: suchita2007/node-js:n1
+          
       - name: Run a one-line script
         run: echo Hello, world!
+      
       
       - name: Run a multi-line script
         run: |
