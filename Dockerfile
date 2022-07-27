@@ -5,4 +5,5 @@ From tomcat:8-jre8
 MAINTAINER "valaxytech@gmail.com" 
 COPY ./webapp.war /usr/local/tomcat/webapps
 
+
 CMD exec gunicorn --bind :$PORT --workers 1 --threads 8 --timeout 0 app:app
